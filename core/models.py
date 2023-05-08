@@ -65,7 +65,7 @@ class Register (models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     last_price = models.DecimalField(max_digits=8, decimal_places=2)
     last_editor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
-    eddit_at = models.DateTimeField(auto_now=True)
+    edit_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
